@@ -17,28 +17,29 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Equation Finder
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+   > A database where you can search or submit equations via their variable name. 
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  >Type either the variables you'll be needing. For example, let's say you want to find the pressure based on temperature and volume. Type in pressure and
+  a search can lead to the ideal gas law equation, or perhaps some equations based on real gases.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Engineers, scientists, and students constantly rely on equations to solve problems but there isn't one good simple one place to search for them. 
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > This app is an all in one place to search for equations and just equations. 
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > "It's the 21st century, I shouldn't have to go through my old textbooks to find the equation I'm looking for."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > All you need to do is search and bam you'll find your equation
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "My physics homework became way easier thanks to equation finder"
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > "It's never been easier to find the equation you need, simply use this app and get started today"
