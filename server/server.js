@@ -17,11 +17,13 @@ app.use(express.static(__dirname + "/../client"));
 app.post('/Equations',function(req,res){
 	var send = req.body.variable;
 	var request_body = {};
-	var my_equations; 
+	request_body.my_equations = "";
+	request_body.wolframalpha_equations = ""; 
 	client.hgetall(send,function(err,obj){
-		my_equations = obj.equation;
+		if(obj && obj.equation){
+			request_body.my_equations = obj.equation;
+		}
 	});
-	request_body.my_equations = obj.equation;
 	request("http://api.wolframalpha.com/v2/query?input=" + send + "&appid=W6E9V9-JHER6QYU22", function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
 	  	  request_body.wolframalpha_equations = body
