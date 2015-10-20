@@ -18,7 +18,6 @@ $(function() {
 	    		}
     		}
     	}
-    	console.log("Final equations",equations);
     })
     $(".equation_search").on('click',function(){
     	var variable = $('.equation_find').val();

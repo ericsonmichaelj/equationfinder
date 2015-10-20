@@ -1,0 +1,8 @@
+{
+  "name": "Equation_Finder",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "MathJax": "~2.5.3"
+  }
+}
