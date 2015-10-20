@@ -22,7 +22,7 @@ $(function() {
     })
     $(".equation_search").on('click',function(){
     	var variable = $('.equation_find').val();
-    	$("#equations").html("")
+    	$("#equations").html("");
     	for (var equation in equations[variable]){
     		//console.log(equation)
 
