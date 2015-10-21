@@ -13,8 +13,9 @@
 	 		}
 	 		console.log(data.my_equations);
 	 		for(var i = 0;i<data.my_equations.length;i++){
-	 			$("#equations").append("<p>" + data.my_equations[i] + "</p>");
+	 			$("#equations").append("<p>\\(" + data.my_equations[i] + "\\)</p>");
 	 		}
+	 		MathJax.Hub.Typeset()
  		}
  		
 
