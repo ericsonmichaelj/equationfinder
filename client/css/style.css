@@ -27,6 +27,11 @@ h1 {
 	text-align: center;
 }
 
-.equation_find {
-	margin: 10px;
+.row .equation_find {
+	margin-left: 20px;
+	margin-bottom: 2%;
+}
+
+.row .equation_search {
+	margin-left:20px;
 }
