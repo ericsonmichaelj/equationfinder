@@ -2,7 +2,6 @@ var client = require("./server.js")
 
 
 module.exports = function(req,res){
-	console.log(req.body);
 	data = req.body;
 	var hash_key;
 	for(property in req.body){
@@ -10,6 +9,6 @@ module.exports = function(req,res){
 	}
 	var variables = data[hash_key];
 	for(var i = 0;i<variables.length;i++){
-	client.hset(variables[i],"equation",hash_key);
+	client.hset(variables[i],hash_key,variables);
 	}
 }
