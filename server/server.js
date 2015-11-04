@@ -5,7 +5,8 @@ var request = require("request");
 var morgan = require('morgan');
 var parser = require('body-parser');
 var redis = require("redis");
-var client = redis.createClient();
+var client =  require('redis').createClient(process.env.REDIS_URL);
+
 module.exports = client;
 var databaseStorage = require('./databaseStorage.js')
 
@@ -46,9 +47,9 @@ app.post('/Equations',function(req,res){
 });
 
 app.post('/',databaseStorage);
-
-app.set("port", 3000);
-var server = app.listen(3000,function(){
+var port = process.env.PORT || 3000;
+app.set("port", port);
+var server = app.listen(port,function(){
 	var host = server.address().address;
 	var port = server.address().port;
 	console.log('Example app listening at http://%s:%s', host, port);
