@@ -12,15 +12,15 @@
 	  		$("#equations").append("<img src=" + $image.attr("src") +"/>")
 	 		}
 	 		console.log(data.my_equations);
-	 		for(var i = 0;i<data.my_equations.length;i++){
-	 			$("#equations").append("<p>\\(" + data.my_equations[i] + "\\)</p>");
-	 		}
+
+	 			for(var property in data.my_equations[0]){
+	 			$("#equations").append("<p>\\(" + property + "\\)</p>");
+	 			$("#equations").append("The variables used are " + data.my_equations[0][property][0].substring(0,data.my_equations[0][property][0].length-1));
+	 			}	
+	 		
 	 		MathJax.Hub.Typeset()
  		}
- 		
-
-
-
+ 	
  	$(".equation_search").on('click',function(){
     	var variable = $('.equation_find').val();
  		var send = $('.equation_find').val();
