@@ -11,4 +11,5 @@ module.exports = function(req,res){
 	for(var i = 0;i<variables.length;i++){
 	client.hset(variables[i],hash_key,variables);
 	}
+  res.send()
 }

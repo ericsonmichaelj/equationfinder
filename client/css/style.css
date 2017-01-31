@@ -36,3 +36,6 @@ h1 {
 .row .equation_search {
 	margin-left:20px;
 }
+.error {
+	color: red;
+}

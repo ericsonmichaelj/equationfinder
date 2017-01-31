@@ -2,9 +2,13 @@
 <html>
 	<head>
 	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="js/notify.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type-"text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css"
+	<link rel="stylesheet" type="text/css" href="
+	bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	</head>
 <script type="text/x-mathjax-config">
   // MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -31,49 +35,51 @@
 		</div>
 		<div id = "equations">
 		</div>
-		<h2>Submit an equation</h2>
-		<div id="div_equation_id">
-			<p>Equation</p><input type="text" class="equation"></input>
-		</div>
-		<div class="row top text-center">	
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-6">
-						<p>Variable #1</p>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class = "variable"></input>
+		<div id="submit-equation-section">
+			<h2>Submit an equation</h2>
+			<div id="div_equation_id">
+				<p>Equation</p><input type="text" class="equation"></input>
+			</div>
+			<div class="row top text-center">	
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Variable #1</p>
+						</div>
+						<div class="col-md-6">
+							<input type="text" class = "variable"></input>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-6">
-						<p>Variable #2</p>
-					</div>
-					<div class="col-md-6">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Variable #2</p>
+						</div>
+						<div class="col-md-6">
 
-						<input type="text" class = "variable"></input>
+							<input type="text" class = "variable"></input>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-6">
-						<p>Variable #3</p>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Variable #3</p>
+						</div>
+						<div class="col-md-6">
+							<input type="text" class = "variable"></input>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<input type="text" class = "variable"></input>
-					</div>
-				</div>
-			</div>	
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-6">
-						<p>Variable #4</p>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class = "variable"></input>
+				</div>	
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Variable #4</p>
+						</div>
+						<div class="col-md-6">
+							<input type="text" class = "variable"></input>
+						</div>
 					</div>
 				</div>
 			</div>

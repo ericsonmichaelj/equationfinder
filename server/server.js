@@ -41,7 +41,7 @@ app.post('/Equations',function(req,res){
 	  	  request_body.wolframalpha_equations = body
 	  	  res.send(request_body);
 	  }else{
-	  	console.log("error not fiound");
+	  	res.status(500).send('Unable to fetch from wolframalpha')
 	  }
 	})
 });
@@ -52,6 +52,6 @@ app.set("port", port);
 var server = app.listen(port,function(){
 	var host = server.address().address;
 	var port = server.address().port;
-	console.log('Example app listening at http://%s:%s', host, port);
+	console.log('Example app listening at http://' + host + ':' + port);
 });
 
